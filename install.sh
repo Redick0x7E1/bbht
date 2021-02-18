@@ -13,6 +13,8 @@ sudo apt-get install -y python-setuptools
 sudo apt-get install -y libldns-dev
 sudo apt-get install -y python3-pip
 sudo apt-get install -y python-pip
+#Setup PIP Proper @obsidianinfosec
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 sudo apt-get install -y python-dnspython
 sudo apt-get install -y git
 sudo apt-get install -y rename
@@ -72,7 +74,7 @@ echo "Don't forget to set up AWS credentials!"
 mkdir ~/tools
 cd ~/tools/
 
-#install aquatone
+#install aquatone | Remove this and use screenshotter
 echo "Installing Aquatone"
 go get github.com/michenriksen/aquatone
 echo "done"
@@ -82,7 +84,7 @@ echo "Installing Chromium"
 sudo snap install chromium
 echo "done"
 
-echo "installing JSParser"
+echo "installing JSParser" | needs fixing due to dependancies
 git clone https://github.com/nahamsec/JSParser.git
 cd JSParser*
 sudo python setup.py install
@@ -106,7 +108,9 @@ echo "done"
 echo "installing wpscan"
 git clone https://github.com/wpscanteam/wpscan.git
 cd wpscan*
-sudo gem install bundler && bundle install --without test
+#without -- test is depricated. No need to use here. Also, add sudo to bundle install
+sudo gem install bundler
+sudo bundle install 
 cd ~/tools/
 echo "done"
 
