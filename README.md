@@ -1,6 +1,7 @@
-# BBHT
+# BBHTv2
 
 Bug Bounty Hunting Tools is a script to install the most popular tools used while looking for vulnerabilities for a bug bounty program.
+Based on @nahamsec. updated for Ubuntu20.04 
  
 # Tools
 
