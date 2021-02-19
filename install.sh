@@ -164,6 +164,7 @@ pip install -r requirements.txt
 cd ~/tools/
 echo "done"
 
+# go files not callable even after adding gopath env variable. Need to fix.
 echo "installing httprobe"
 go get -u github.com/tomnomnom/httprobe 
 echo "done"
@@ -189,6 +190,15 @@ cat dns-Jhaddix.txt | head -n -14 > clean-jhaddix-dns.txt
 cd ~/tools/
 echo "done"
 
+# install eyewitness
+
+#favfreak
+
+# install neuclei
+
+# install httpx
+
+# install masscan
 
 
 echo -e "\n\n\n\n\n\n\n\n\n\n\nDone! All tools are set up in ~/tools"
